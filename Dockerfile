@@ -1,3 +1,12 @@
+# Stage 1: Build the Java application using Gradle
+FROM gradle:7.2.0-jdk11 AS build
+
+WORKDIR /app
+COPY . .
+
+# Build the Java application
+RUN gradle build
+
 # Main stage
 FROM alpine:3.20.3
 
@@ -6,12 +15,13 @@ COPY scripts /scripts
 COPY pipeline /pipeline
 COPY src/main/resources/static/fonts/*.ttf /usr/share/fonts/opentype/noto/
 #COPY src/main/resources/static/fonts/*.otf /usr/share/fonts/opentype/noto/
-COPY build/libs/*.jar app.jar
+#COPY build/libs/*.jar app.jar
+COPY --from=build /app/build/libs/*.jar /app.jar
 
 ARG VERSION_TAG
 
 # Set Environment Variables
-ENV DOCKER_ENABLE_SECURITY=false \
+ENV DOCKER_ENABLE_SECURITY=true \
     VERSION_TAG=$VERSION_TAG \
     JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -XX:MaxRAMPercentage=75" \
     HOME=/home/stirlingpdfuser \
