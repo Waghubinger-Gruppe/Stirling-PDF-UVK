@@ -1,5 +1,5 @@
 # Stage 1: Build the Java application using Gradle
-FROM gradle:7.2.0-jdk11 AS build
+FROM gradle:7.2.0-jdk17 AS build
 
 WORKDIR /app
 COPY . .
