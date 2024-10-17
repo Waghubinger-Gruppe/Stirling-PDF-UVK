@@ -17,6 +17,8 @@ All files and PDFs exist either exclusively on the client side, reside in server
 
 ![stirling-home](images/stirling-home.jpg)
 
+Small test-Thomas
+
 ## Features
 
 - Dark mode support.
@@ -100,7 +102,9 @@ Demo of the app is available [here](https://stirlingpdf.io).
 - [PDF-LIB.js](https://github.com/Hopding/pdf-lib)
 
 ## How to use
+
 ### Windows
+
 For windows users download the latest Stirling-PDF.exe from our [release](https://github.com/Stirling-Tools/Stirling-PDF/releases) section or by clicking [here](https://github.com/Stirling-Tools/Stirling-PDF/releases/latest/download/Stirling-PDF.exe)
 
 ### Locally
@@ -119,7 +123,7 @@ For people that don't mind about space optimization just use the latest tag.
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/frooodle/s-pdf/latest-fat?label=Stirling-PDF%20Fat)
 
 Please note in below examples you may need to change the volume paths as needed, current examples install them to the current working directory
-eg ``./extraConfigs:/configs`` to ``/opt/stirlingpdf/extraConfigs:/configs``
+eg `./extraConfigs:/configs` to `/opt/stirlingpdf/extraConfigs:/configs`
 
 ### Docker Run
 
@@ -152,8 +156,8 @@ services:
     volumes:
       - ./trainingData:/usr/share/tessdata #Required for extra OCR languages
       - ./extraConfigs:/configs
-#      - ./customFiles:/customFiles/
-#      - ./logs:/logs/
+    #      - ./customFiles:/customFiles/
+    #      - ./logs:/logs/
     environment:
       - DOCKER_ENABLE_SECURITY=false
       - INSTALL_BOOK_AND_ADVANCED_HTML_OPS=false
@@ -170,44 +174,44 @@ Please view https://github.com/Stirling-Tools/Stirling-PDF/blob/main/HowToUseOCR
 
 Stirling PDF currently supports 38!
 
-| Language                                    | Progress                               |
-| ------------------------------------------- | -------------------------------------- |
-| Arabic (العربية) (ar_AR)                    | ![93%](https://geps.dev/progress/93)   |
-| Basque (Euskara) (eu_ES)                    | ![57%](https://geps.dev/progress/57)   |
-| Bulgarian (Български) (bg_BG)               | ![86%](https://geps.dev/progress/86)   |
-| Catalan (Català) (ca_CA)                    | ![44%](https://geps.dev/progress/44)   |
-| Croatian (Hrvatski) (hr_HR)                 | ![87%](https://geps.dev/progress/87)   |
-| Czech (Česky) (cs_CZ)                       | ![82%](https://geps.dev/progress/82)   |
-| Danish (Dansk) (da_DK)                      | ![91%](https://geps.dev/progress/91)   |
-| Dutch (Nederlands) (nl_NL)                  | ![88%](https://geps.dev/progress/88)   |
-| English (English) (en_GB)                   | ![100%](https://geps.dev/progress/100) |
-| English (US) (en_US)                        | ![100%](https://geps.dev/progress/100) |
-| French (Français) (fr_FR)                   | ![85%](https://geps.dev/progress/85)   |
-| German (Deutsch) (de_DE)                    | ![93%](https://geps.dev/progress/93) |
-| Greek (Ελληνικά) (el_GR)                    | ![75%](https://geps.dev/progress/75)   |
-| Hindi (हिंदी) (hi_IN)                          | ![72%](https://geps.dev/progress/72)   |
-| Hungarian (Magyar) (hu_HU)                  | ![69%](https://geps.dev/progress/69)   |
-| Indonesia (Bahasa Indonesia) (id_ID)        | ![70%](https://geps.dev/progress/70)   |
-| Irish (Gaeilge) (ga_IE)                     | ![90%](https://geps.dev/progress/90)   |
-| Italian (Italiano) (it_IT)                  | ![98%](https://geps.dev/progress/98)   |
-| Japanese (日本語) (ja_JP)                   | ![87%](https://geps.dev/progress/87)   |
-| Korean (한국어) (ko_KR)                     | ![77%](https://geps.dev/progress/77)   |
-| Norwegian (Norsk) (no_NB)                   | ![90%](https://geps.dev/progress/90)   |
-| Polish (Polski) (pl_PL)                     | ![84%](https://geps.dev/progress/84)   |
-| Portuguese (Português) (pt_PT)              | ![72%](https://geps.dev/progress/72)   |
-| Portuguese Brazilian (Português) (pt_BR)    | ![94%](https://geps.dev/progress/94)   |
-| Romanian (Română) (ro_RO)                   | ![92%](https://geps.dev/progress/92)   |
-| Russian (Русский) (ru_RU)                   | ![77%](https://geps.dev/progress/77)   |
+| Language                                     | Progress                               |
+| -------------------------------------------- | -------------------------------------- |
+| Arabic (العربية) (ar_AR)                     | ![93%](https://geps.dev/progress/93)   |
+| Basque (Euskara) (eu_ES)                     | ![57%](https://geps.dev/progress/57)   |
+| Bulgarian (Български) (bg_BG)                | ![86%](https://geps.dev/progress/86)   |
+| Catalan (Català) (ca_CA)                     | ![44%](https://geps.dev/progress/44)   |
+| Croatian (Hrvatski) (hr_HR)                  | ![87%](https://geps.dev/progress/87)   |
+| Czech (Česky) (cs_CZ)                        | ![82%](https://geps.dev/progress/82)   |
+| Danish (Dansk) (da_DK)                       | ![91%](https://geps.dev/progress/91)   |
+| Dutch (Nederlands) (nl_NL)                   | ![88%](https://geps.dev/progress/88)   |
+| English (English) (en_GB)                    | ![100%](https://geps.dev/progress/100) |
+| English (US) (en_US)                         | ![100%](https://geps.dev/progress/100) |
+| French (Français) (fr_FR)                    | ![85%](https://geps.dev/progress/85)   |
+| German (Deutsch) (de_DE)                     | ![93%](https://geps.dev/progress/93)   |
+| Greek (Ελληνικά) (el_GR)                     | ![75%](https://geps.dev/progress/75)   |
+| Hindi (हिंदी) (hi_IN)                        | ![72%](https://geps.dev/progress/72)   |
+| Hungarian (Magyar) (hu_HU)                   | ![69%](https://geps.dev/progress/69)   |
+| Indonesia (Bahasa Indonesia) (id_ID)         | ![70%](https://geps.dev/progress/70)   |
+| Irish (Gaeilge) (ga_IE)                      | ![90%](https://geps.dev/progress/90)   |
+| Italian (Italiano) (it_IT)                   | ![98%](https://geps.dev/progress/98)   |
+| Japanese (日本語) (ja_JP)                    | ![87%](https://geps.dev/progress/87)   |
+| Korean (한국어) (ko_KR)                      | ![77%](https://geps.dev/progress/77)   |
+| Norwegian (Norsk) (no_NB)                    | ![90%](https://geps.dev/progress/90)   |
+| Polish (Polski) (pl_PL)                      | ![84%](https://geps.dev/progress/84)   |
+| Portuguese (Português) (pt_PT)               | ![72%](https://geps.dev/progress/72)   |
+| Portuguese Brazilian (Português) (pt_BR)     | ![94%](https://geps.dev/progress/94)   |
+| Romanian (Română) (ro_RO)                    | ![92%](https://geps.dev/progress/92)   |
+| Russian (Русский) (ru_RU)                    | ![77%](https://geps.dev/progress/77)   |
 | Serbian Latin alphabet (Srpski) (sr_LATN_RS) | ![72%](https://geps.dev/progress/72)   |
-| Simplified Chinese (简体中文) (zh_CN)       | ![93%](https://geps.dev/progress/93)   |
-| Slovakian (Slovensky) (sk_SK)               | ![84%](https://geps.dev/progress/84)   |
-| Spanish (Español) (es_ES)                   | ![93%](https://geps.dev/progress/93)   |
-| Swedish (Svenska) (sv_SE)                   | ![92%](https://geps.dev/progress/92)   |
-| Thai (ไทย) (th_TH)                          | ![91%](https://geps.dev/progress/91) |
-| Traditional Chinese (繁體中文) (zh_TW)      | ![90%](https://geps.dev/progress/90)   |
-| Turkish (Türkçe) (tr_TR)                    | ![94%](https://geps.dev/progress/94)   |
-| Ukrainian (Українська) (uk_UA)              | ![82%](https://geps.dev/progress/82)   |
-| Vietnamese (Tiếng Việt) (vi_VN)             | ![90%](https://geps.dev/progress/90)   |
+| Simplified Chinese (简体中文) (zh_CN)        | ![93%](https://geps.dev/progress/93)   |
+| Slovakian (Slovensky) (sk_SK)                | ![84%](https://geps.dev/progress/84)   |
+| Spanish (Español) (es_ES)                    | ![93%](https://geps.dev/progress/93)   |
+| Swedish (Svenska) (sv_SE)                    | ![92%](https://geps.dev/progress/92)   |
+| Thai (ไทย) (th_TH)                           | ![91%](https://geps.dev/progress/91)   |
+| Traditional Chinese (繁體中文) (zh_TW)       | ![90%](https://geps.dev/progress/90)   |
+| Turkish (Türkçe) (tr_TR)                     | ![94%](https://geps.dev/progress/94)   |
+| Ukrainian (Українська) (uk_UA)               | ![82%](https://geps.dev/progress/82)   |
+| Vietnamese (Tiếng Việt) (vi_VN)              | ![90%](https://geps.dev/progress/90)   |
 
 ## Contributing (creating issues, translations, fixing bugs, etc.)
 
@@ -221,8 +225,8 @@ Includes things like
 - Custom application name
 - Custom slogans, icons, HTML, images CSS etc (via file overrides)
 
-There are two options for this, either using the generated settings file ``settings.yml``
-This file is located in the ``/configs`` directory and follows standard YAML formatting
+There are two options for this, either using the generated settings file `settings.yml`
+This file is located in the `/configs` directory and follows standard YAML formatting
 
 Environment variables are also supported and would override the settings file
 For example in the settings.yml you have
@@ -232,7 +236,7 @@ security:
   enableLogin: 'true'
 ```
 
-To have this via an environment variable you would have ``SECURITY_ENABLELOGIN``
+To have this via an environment variable you would have `SECURITY_ENABLELOGIN`
 
 The Current list of settings is
 
@@ -295,7 +299,7 @@ metrics:
   enabled: true # 'true' to enable Info APIs (`/api/*`) endpoints, 'false' to disable
 ```
 
-There is an additional config file ``/configs/custom_settings.yml`` were users familiar with java and spring application.properties can input their own settings on-top of Stirling-PDFs existing ones
+There is an additional config file `/configs/custom_settings.yml` were users familiar with java and spring application.properties can input their own settings on-top of Stirling-PDFs existing ones
 
 ### Extra notes
 
@@ -304,11 +308,11 @@ There is an additional config file ``/configs/custom_settings.yml`` were users f
 
 ### Environment only parameters
 
-- ``SYSTEM_ROOTURIPATH`` ie set to ``/pdf-app`` to Set the application's root URI to ``localhost:8080/pdf-app``
-- ``SYSTEM_CONNECTIONTIMEOUTMINUTES`` to set custom connection timeout values
-- ``DOCKER_ENABLE_SECURITY`` to tell docker to download security jar (required as true for auth login)
-- ``INSTALL_BOOK_AND_ADVANCED_HTML_OPS`` to download calibre onto stirling-pdf enabling pdf to/from book and advanced html conversion
-- ``LANGS`` to define custom font libraries to install for use for document conversions
+- `SYSTEM_ROOTURIPATH` ie set to `/pdf-app` to Set the application's root URI to `localhost:8080/pdf-app`
+- `SYSTEM_CONNECTIONTIMEOUTMINUTES` to set custom connection timeout values
+- `DOCKER_ENABLE_SECURITY` to tell docker to download security jar (required as true for auth login)
+- `INSTALL_BOOK_AND_ADVANCED_HTML_OPS` to download calibre onto stirling-pdf enabling pdf to/from book and advanced html conversion
+- `LANGS` to define custom font libraries to install for use for document conversions
 
 ## API
 
@@ -322,9 +326,9 @@ For those wanting to use Stirling-PDFs backend API to link with their own custom
 ### Prerequisites
 
 - User must have the folder ./configs volumed within docker so that it is retained during updates.
-- Docker users must download the security jar version by setting ``DOCKER_ENABLE_SECURITY`` to ``true`` in environment variables.
-- Then either enable login via the settings.yml file or via setting ``SECURITY_ENABLE_LOGIN`` to ``true``
-- Now the initial user will be generated with username ``admin`` and password ``stirling``. On login you will be forced to change the password to a new one. You can also use the environment variables ``SECURITY_INITIALLOGIN_USERNAME`` and  ``SECURITY_INITIALLOGIN_PASSWORD`` to set your own straight away (Recommended to remove them after user creation).
+- Docker users must download the security jar version by setting `DOCKER_ENABLE_SECURITY` to `true` in environment variables.
+- Then either enable login via the settings.yml file or via setting `SECURITY_ENABLE_LOGIN` to `true`
+- Now the initial user will be generated with username `admin` and password `stirling`. On login you will be forced to change the password to a new one. You can also use the environment variables `SECURITY_INITIALLOGIN_USERNAME` and `SECURITY_INITIALLOGIN_PASSWORD` to set your own straight away (Recommended to remove them after user creation).
 
 Once the above has been done, on restart, a new stirling-pdf-DB.mv.db will show if everything worked.
 
@@ -350,8 +354,8 @@ For API usage you must provide a header with 'X-API-Key' and the associated API 
 
 ### Q2: Why is my application downloading .htm files?
 
-This is an issue caused commonly by your NGINX configuration. The default file upload size for NGINX is 1MB, you need to add the following in your Nginx sites-available file. ``client_max_body_size SIZE;`` Where "SIZE" is 50M for example for 50MB files.
+This is an issue caused commonly by your NGINX configuration. The default file upload size for NGINX is 1MB, you need to add the following in your Nginx sites-available file. `client_max_body_size SIZE;` Where "SIZE" is 50M for example for 50MB files.
 
 ### Q3: Why is my download timing out
 
-NGINX has timeout values by default so if you are running Stirling-PDF behind NGINX you may need to set a timeout value such as adding the config ``proxy_read_timeout 3600;``
+NGINX has timeout values by default so if you are running Stirling-PDF behind NGINX you may need to set a timeout value such as adding the config `proxy_read_timeout 3600;`
