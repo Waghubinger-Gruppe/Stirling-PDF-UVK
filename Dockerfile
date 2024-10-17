@@ -21,7 +21,7 @@ COPY --from=build /app/build/libs/*.jar /app.jar
 ARG VERSION_TAG
 
 # Set Environment Variables
-ENV DOCKER_ENABLE_SECURITY=true \
+ENV DOCKER_ENABLE_SECURITY=false \
     VERSION_TAG=$VERSION_TAG \
     JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -XX:MaxRAMPercentage=75" \
     HOME=/home/stirlingpdfuser \
