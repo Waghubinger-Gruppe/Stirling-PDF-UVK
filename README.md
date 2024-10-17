@@ -17,8 +17,6 @@ All files and PDFs exist either exclusively on the client side, reside in server
 
 ![stirling-home](images/stirling-home.jpg)
 
-Small test-Thomas
-
 ## Features
 
 - Dark mode support.
